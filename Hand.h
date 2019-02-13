@@ -22,8 +22,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #pragma once
 #include <curand.h>
-#include <curand_kernel.h>
-#include "Utils.h"
+//#include <curand_kernel.h>
+//#include "Utils.h"
 #include "Card.h"
 
 /*! \def Maximum number of hards allowed in single hand. */

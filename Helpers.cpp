@@ -95,7 +95,7 @@ int random(int min, int max) {
 	return (rand() % (max + 1 - min)) + min;
 }
 
-float random() {
+float bcgRandom() {
 	float ran = rand() / (float)RAND_MAX;
 
 	return ran;
