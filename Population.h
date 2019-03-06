@@ -33,7 +33,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 typedef struct {
 	int size;                                /**< Number of individuals */
 	int fittest;                             /**< Index of the fittest */
-	Strategy individuals[POPULATION_SIZE];   /**< Individual strategies */
+	Strategy *individuals;                   /**< Individual strategies */
 } Population;
 
 /*!

@@ -36,8 +36,8 @@ int main(int argc, char** argv) {
 		test01,
 		test02,*/
 		test03,
-		/*test10
-		test04*/
+		/*test10*/
+		test04
 	};
 
 	int n = sizeof(tests) / sizeof(void*);
