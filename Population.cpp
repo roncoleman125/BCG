@@ -22,9 +22,19 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #pragma once
 #include "Population.h"
+#include <stdio.h>
 
 Population Population_() {
-	Population population = { POPULATION_SIZE, 0, { Strategy_() } };
+	Strategy *strategies = (Strategy*)calloc(POPULATION_SIZE, sizeof(Strategy));
+	if (strategies == NULL) {
+		fprintf(stderr, "Failed to allocate strategies.\n");
+		exit(1);
+	}
+	for (int i = 0; i < POPULATION_SIZE; i++)
+		strategies[i] = Strategy_();
+
+	//Population population = { POPULATION_SIZE, 0, { Strategy_() } };
+	Population population = { POPULATION_SIZE, 0, strategies };
 
 	return population;
 }

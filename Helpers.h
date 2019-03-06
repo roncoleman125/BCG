@@ -23,4 +23,4 @@ int random(int min, int max);
   \brief Returns uniform floating point random deviate in range [0, 1), that is, exclusive of 1.
   \return Floating point number.
 */
-float random();
+float bcgRandom();

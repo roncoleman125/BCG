@@ -28,7 +28,7 @@ void mutate(Strategy* individual) {
 
 	// Randomly mutate the play if probability is below mutation rate
 	for (int index = 0; index < NUMBER_RULES; index++) {
-		float lottery = random();
+		float lottery = bcgRandom();
 
 		if (lottery > MUTATION_RATE)
 			continue;

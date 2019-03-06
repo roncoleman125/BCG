@@ -1,0 +1,26 @@
+# This file makes Gattaca.
+# Author: R. Coleman
+# Created: 4 Feb 2019
+CC = nvcc
+CFLAGS=-c
+LDFLAGS=
+DEPS=Card.h GA.h Hand.h Helpers.h Kpax.h Player.h Population.h Strategy.h Utils.h
+#CPP=GA.cpp Helpers.cpp Main.cpp Population.cpp Test03.cpp
+#CU=Kpax.cu
+OBJS=GA.o Helpers.o Main.o Population.o Test01.o Test02.o Test03.o Test04.o Test10.o
+CUOBJS=Kpax.o
+EXECUTABLE=Gattaca 
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJS) $(CUOBJS)
+	$(CC) $(LDFLAGS) $(OBJS) $(CUOBJS) -o $@
+
+%.o: %.cpp $(DEPS)
+	$(CC) $(CFLAGS) $< $@
+
+%.o: %.cu $(DEPS)
+	$(CC) $(CFLAGS) $< $@
+
+clean:
+	rm *.o Gattaca
