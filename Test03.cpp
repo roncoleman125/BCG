@@ -52,28 +52,28 @@ tid   total     nones     stays      hits   doubles    splits
 #include "Kpax.h"
 #include "Helpers.h"
 
-#define NUM_BLOCKS 2
-#define NUM_THREADS_PER_BLOCK 5
+#define NUM_BLOCKS 4
+#define NUM_THREADS_PER_BLOCK 32
 #define NUM_THREADS_TOTAL (NUM_BLOCKS * NUM_THREADS_PER_BLOCK)
-#define NUM_STRATEGIES NUM_THREADS_TOTAL 
-#define NUM_GAMES 1000
+#define NUM_STRATEGIES NUM_THREADS_TOTAL
+#define NUM_GAMES 10000
 
 void test03(void) {
-	Strategy strategies[NUM_STRATEGIES];
+  Strategy strategies[NUM_STRATEGIES];
 
-	for (int index = 0; index < NUM_STRATEGIES; index++) {
-		strategies[index] = BasicStrategy_();
-	}
+  for (int index = 0; index < NUM_STRATEGIES; index++) {
+    strategies[index] = BasicStrategy_();
+  }
 
-	Game statistics[NUM_STRATEGIES];
-	for (int index = 0; index < NUM_STRATEGIES; index++) {
-		statistics[index] = Game_();
-	}
+  Game statistics[NUM_STRATEGIES];
+  for (int index = 0; index < NUM_STRATEGIES; index++) {
+    statistics[index] = Game_();
+  }
 
-	int status = evaluate(NUM_BLOCKS, NUM_STRATEGIES, strategies, NUM_GAMES, statistics);
+  int status = evaluate(NUM_BLOCKS, NUM_STRATEGIES, strategies, NUM_GAMES, statistics);
 
-	if (status == 0)
-		report(strategies, statistics, NUM_STRATEGIES);
-	else
-		fprintf(stderr, "evaluate returned code = %d\n", status);
+  if (status == 0)
+    report(strategies, statistics, NUM_STRATEGIES);
+  else
+    fprintf(stderr, "evaluate returned code = %d\n", status);
 }
