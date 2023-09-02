@@ -86,4 +86,15 @@
       <Filter>CU files</Filter>
     </CudaCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\make-env.bat">
+      <Filter>Other files</Filter>
+    </None>
+    <None Include="..\..\make-gattaca.bat">
+      <Filter>Other files</Filter>
+    </None>
+    <None Include="..\..\nvcc-env.bat">
+      <Filter>Other files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

@@ -38,6 +38,11 @@
     <CudaCompile Include="..\..\kernel.cu" />
     <CudaCompile Include="..\..\Kpax.cu" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\make-env.bat" />
+    <None Include="..\..\make-gattaca.bat" />
+    <None Include="..\..\nvcc-env.bat" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C41D0BE2-F453-489C-B9A8-526BA9B15A8E}</ProjectGuid>
     <RootNamespace>BCGRuntime</RootNamespace>
