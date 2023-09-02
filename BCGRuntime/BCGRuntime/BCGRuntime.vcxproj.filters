@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="H files">
+      <UniqueIdentifier>{7b0ff14b-5306-4806-9038-2f426e9de81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CPP files">
+      <UniqueIdentifier>{da4b2edc-b58b-435f-af05-91c7d6b7506b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CU files">
+      <UniqueIdentifier>{1820e05d-2d5f-41a0-9a40-f4eb14751cb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other files">
+      <UniqueIdentifier>{d086d6ee-0c6c-4ca3-af25-d1c8d846b12b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\GA.cpp">
+      <Filter>CPP files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Helpers.cpp">
+      <Filter>CPP files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Main.cpp">
+      <Filter>CPP files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Population.cpp">
+      <Filter>CPP files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Test00.cpp">
+      <Filter>CPP files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Test01.cpp">
+      <Filter>CPP files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Test02.cpp">
+      <Filter>CPP files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Test03.cpp">
+      <Filter>CPP files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Test04.cpp">
+      <Filter>CPP files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Test10.cpp">
+      <Filter>CPP files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Card.h">
+      <Filter>H files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GA.h">
+      <Filter>H files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Game.h">
+      <Filter>H files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Hand.h">
+      <Filter>H files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Helpers.h">
+      <Filter>H files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Kpax.h">
+      <Filter>H files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Player.h">
+      <Filter>H files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Population.h">
+      <Filter>H files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Strategy.h">
+      <Filter>H files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Utils.h">
+      <Filter>H files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\kernel.cu">
+      <Filter>CU files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\Kpax.cu">
+      <Filter>CU files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
